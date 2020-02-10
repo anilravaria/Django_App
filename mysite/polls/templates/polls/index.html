@@ -1,5 +1,14 @@
-{% load static %}
-<link rel="stylesheet" type="text/css" href="{% static 'polls/styles.css' %}">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/styles.css' %}">
+
+</head>
 
 <body>
     {% if latest_question_list %}
@@ -12,3 +21,5 @@
     <p>No polls are available.</p>
     {% endif %}
 </body>
+
+</html>
