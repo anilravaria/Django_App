@@ -1,6 +1,16 @@
-*{
-  color:greenyellow;
-}
+
 body {
-  background: beige;
+  text-align: center;
+  color: darkgreen;
+  background-color: lightgreen;
+  line-height: 2;
+}
+.poll-link{
+  text-decoration: none;
+  font-size: 2rem;
+  color: blue;
+  font-weight: 100;
+  background-color: chartreuse;
+  padding: 1rem;
+  border: solid 3px greenyellow;
 }

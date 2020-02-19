@@ -1,6 +1,43 @@
-li a {
-  color: green;
-}
+
 body {
-  background: beige;
+  font-size: 2rem;
+  text-align: center;
+  color: darkgreen;
+  background-color: lightgreen;
+  line-height: 2;
+}
+ul li{
+  list-style: none;
+  text-decoration: none;
+  color: blue;
+  
+}
+a{
+  text-decoration: none;
+  color: blue;
+  background-color: lightblue;
+  border:2px solid black;
+  padding: 0.5rem;
+  
+}
+a:hover{
+  color: blueviolet;
+  border:dashed 2px black ;
+}
+input[type="radio"]{
+  width: 10%;
+  height: 2rem;
+  
+}
+input[type="submit"]{
+  font-size: 2rem;
+  border-radius: 5%;
+  width: 100%;
+  
+
+}
+.radio-button-group{
+  text-align: left;
+  width: 20%;
+  margin: 0 auto;
 }
