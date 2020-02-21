@@ -1,16 +1,15 @@
 
 body {
-  font-size: 2rem;
+  font-size: 120%;
   text-align: center;
-  color: darkgreen;
-  background-color: lightgreen;
+  color: rgb(190, 25, 190);
+  background-color: white;
   line-height: 2;
 }
 ul li{
   list-style: none;
   text-decoration: none;
   color: blue;
-  
 }
 a{
   text-decoration: none;
@@ -25,19 +24,24 @@ a:hover{
   border:dashed 2px black ;
 }
 input[type="radio"]{
-  width: 10%;
-  height: 2rem;
+  height: 1rem;
+  font-size: 1rem;
   
 }
+form{
+  text-align: center;
+}
 input[type="submit"]{
-  font-size: 2rem;
-  border-radius: 5%;
-  width: 100%;
+  font-size: 1.7rem;
+  border-radius: 10%;
+  width: 80%;
+  margin: 20px auto;
+  
   
 
 }
 .radio-button-group{
   text-align: left;
-  width: 20%;
+  width: 30%;
   margin: 0 auto;
 }
