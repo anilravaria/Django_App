@@ -5,6 +5,8 @@ body {
   color: rgb(190, 25, 190);
   background-color: white;
   line-height: 2;
+  font-family: 'Oxanium',Arial, Helvetica, sans-serif ;
+  
 }
 ul li{
   list-style: none;

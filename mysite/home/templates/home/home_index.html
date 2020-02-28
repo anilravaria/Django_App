@@ -8,11 +8,14 @@
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'home/styles.css' %}">
     <link rel="shortcut icon" href="{% static 'home/images/favicon.ico' %}" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Oxanium:800&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
     <h1>Polls App</h1>
     <a class="poll-link" href="{% url 'polls:index' %}">View Polls</a>
+    <a href="{% url 'polls:CreatePolls' %}" class="poll-link">Create Polls</a>
 </body>
 
 </html>

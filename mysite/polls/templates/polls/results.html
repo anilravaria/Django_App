@@ -7,13 +7,15 @@
     <title>Result</title>
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'polls/styles.css' %}">
+    <link rel="shortcut icon" href="{% static 'polls/images/favicon.ico' %}" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Oxanium:800&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
     <h1>{{ question.question_text }}</h1>
     <ul>
-        {%for choice in question.choice_set.all %}
+        {% for choice in question.choice_set.all %}
         <li>{{ choice.choice_text }}--{{ choice.votes }} vote{{ choice.votes|pluralize}}</li>
         {% endfor %}
     </ul>
