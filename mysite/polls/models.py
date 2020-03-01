@@ -4,11 +4,6 @@ from django.utils import timezone
 from django.contrib import admin
 
 
-class Create_Poll(models.Model):
-    polls_name = models.CharField(max_length=100)
-    pub_date = models.DateTimeField('date published')
-
-
 class Question(models.Model):
     question_text = models.CharField(max_length=200)
     pub_date = models.DateTimeField('date published')
