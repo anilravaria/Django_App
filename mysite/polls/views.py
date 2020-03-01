@@ -29,7 +29,6 @@ from django.utils import timezone
 #     question = get_object_or_404(Question, pk=question_id)
 #     return render(request, 'polls/results.html', {'question': question})
 
-
 class IndexView(generic.ListView):
     template_name = 'polls/index.html'
     context_object_name = 'latest_question_list'
@@ -52,6 +51,14 @@ class DetailView(generic.DetailView):
 class ResultsView(generic.DetailView):
     model = Question
     template_name = 'polls/results.html'
+
+
+class HomeView(generic.ListView):
+    model = Question
+    template_name = 'polls/home.html'
+
+    def get_queryset(self):
+        return None
 
 
 def vote(request, question_id):
